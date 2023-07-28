@@ -1,27 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-curve {
+  /* Set the shape-outside property to create the curve shape */
+  shape-outside: ellipse(50% 100% at 50% 0);
+  /* Set the clip-path property to hide the overflowed text outside the curve shape */
+  clip-path: ellipse(50% 100% at 50% 0);
+  /* Adjust other styling as desired */
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
 }
