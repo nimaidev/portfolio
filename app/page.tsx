@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Activities from "./components/activities";
 import TechStack from "./components/tech";
 import Stats from "./components/stats";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Hero/>
           <TechStack/>
           <Activities />
+          <Footer/>
         </div>
       </div>
     </main>

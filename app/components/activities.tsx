@@ -1,28 +1,14 @@
-import Image from "next/image";
-import profileImage from "../asset/avtar.png";
-import sunImage from "../asset/sun.png";
-import CurveText from "./tech";
+
 export default function Activities() {
   return (
     <>
-      <div className="mb-2 mt-10 flex items-center justify-center gap-2 text-2xl font-bold sm:mb-14 font-handlee">
+      <div className="mt-2 flex items-center justify-center gap-2 text-2xl font-bold mb:5 font-handlee">
         <div className="mr-2 h-px flex-1 translate-y-px bg-gradient-to-l from-gray-200 to-white"></div>
         My Activity Time Machine! 📈
         <div className="ml-2 h-px flex-1 translate-y-px bg-gradient-to-r from-gray-200 to-white"></div>
       </div>
-      <div className="container mx-auto mb-16 pt-12 sm:mb-32 sm:pt-20">
-        <div className="mb-10 flex items-center justify-center gap-2 text-xl font-bold sm:mb-14">
-          <div className="mr-2 h-px flex-1 translate-y-px bg-gradient-to-l from-gray-200 to-white"></div>
-          Trending on
-          <img
-            src="/front/assets/huggingface_logo-noborder.svg"
-            className="w-8"
-            alt=""
-          />
-          this week
-          <div className="ml-2 h-px flex-1 translate-y-px bg-gradient-to-r from-gray-200 to-white"></div>
-        </div>
-        <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="container mx-auto  pt-2 sm:mb-32 mt-5">
+        <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-3 font-handlee">
           <div className="absolute h-full w-2/3 bg-gradient-to-br from-indigo-200/30 to-red-100/40 blur-2xl max-lg:translate-x-1/3 lg:h-96 lg:w-full lg:translate-y-24 lg:-rotate-2 lg:rounded-[50%] lg:from-indigo-200/80 lg:via-red-100/60 lg:to-gray-50"></div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
             <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl">
@@ -484,46 +470,11 @@ export default function Activities() {
               href="/spaces"
               className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
             >
-              Browse +100k applications
-            </a>
+              Browse +50 repositories            </a>
           </div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
             <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl">
-              <svg
-                className="text-gray-500"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                focusable="false"
-                role="img"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 25 25"
-              >
-                <ellipse
-                  cx="12.5"
-                  cy="5"
-                  fill="currentColor"
-                  fill-opacity="0.25"
-                  rx="7.5"
-                  ry="2"
-                ></ellipse>
-                <path
-                  d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z"
-                  fill="currentColor"
-                  opacity="0.5"
-                ></path>
-                <path
-                  d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z"
-                  fill="currentColor"
-                  opacity="0.5"
-                ></path>
-                <path
-                  d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Datasets
+              Recent Commits 👨‍💻
             </h2>
             <div className="mb-3 flex flex-col gap-2.5 rounded-xl bg-white/40 p-3 backdrop-blur-lg sm:mb-7">
               <article className="overview-card-wrapper group white ">
@@ -809,7 +760,7 @@ export default function Activities() {
               href="/datasets"
               className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
             >
-              Browse +50k datasets
+              See all commits
             </a>
           </div>
         </div>
