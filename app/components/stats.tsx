@@ -1,7 +1,7 @@
 export default function Stats() {
   return (
     <>
-      <div className="flex stats shadow align-center align-middle">
+      <div className="flex hidden sm:flex stats shadow align-center align-middle mt-10 mb-5">
         <div className="stat">
           <div className="stat-figure text-primary">
             <svg

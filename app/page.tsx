@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./globals.css";
-import SideNav from "./components/sidenav";
 import Hero from "./components/hero";
 import Activities from "./components/activities";
 import TechStack from "./components/tech";
@@ -20,7 +19,6 @@ export default function Home() {
         <div className="w-3/4 md:-ml-20">
           {/* Main content goes here */}
           <Hero/>
-          <Stats/>
           <TechStack/>
           <Activities />
         </div>
