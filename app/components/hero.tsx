@@ -2,9 +2,12 @@ import profileImage from "../asset/avtar.png";
 import Image from "next/image";
 import Quotes from "./quote";
 import Stats from "./stats";
+import { Console } from "console";
+import { TestData } from "../service/app-service";
 export default function Hero() {
   return (
     <>
+      <h1>{TestData()}</h1>
       <Quotes />
       <Stats/>
       <div className="hero md:-mt-20  font-handlee">
