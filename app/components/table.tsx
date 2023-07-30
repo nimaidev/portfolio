@@ -37,7 +37,6 @@ export default function Table() {
                     <a className="block p-2" href={repo.html_url}>
                       <header
                         className="flex items-center mb-0.5"
-                        title="stabilityai/stable-diffusion-xl-base-1.0"
                       >
                         <h4 className="text-md truncate font-mono text-black dark:group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
                           0x4E43/{repo.name}
@@ -115,7 +114,6 @@ export default function Table() {
                     <a className="block p-2" href={blog.url}>
                       <header
                         className="flex items-center mb-0.5"
-                        title="stabilityai/stable-diffusion-xl-base-1.0"
                       >
                         <h4 className="text-md truncate font-mono text-black dark:group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
                           {blog.title}
