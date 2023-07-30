@@ -5,6 +5,7 @@ import Activities from "./components/activities";
 import TechStack from "./components/tech";
 import Stats from "./components/stats";
 import Footer from "./components/footer";
+import Table from "./components/table";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
           {/* Main content goes here */}
           <Hero/>
           <TechStack/>
-          <Activities />
+          {/* <Activities /> */}
+          <Table/>
           <Footer/>
         </div>
       </div>
