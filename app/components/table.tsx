@@ -90,7 +90,7 @@ export default function Table() {
                   </div>
                   <div className="absolute opacity-60 text-4xl">🏆</div>
                   <h4 className="z-40 max-w-full truncate text-center font-bold leading-tight text-blue-50 text-md">
-                                                          
+                           Coming Soon                               
                   </h4>
                 </a>
               </article>
@@ -100,7 +100,7 @@ export default function Table() {
               href="/spaces"
               className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
             >
-              Browse +50 repositories{" "}
+              Browse 10+ Projects{" "}
             </a>
           </div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
