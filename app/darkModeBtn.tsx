@@ -20,7 +20,7 @@ const DarkModeBtn = () => {
   return (
     <button className="pt-5 h-10 float-right"
       onClick={() => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        setTheme(theme === "dark" || theme==='system' ? "light" : "dark");
       }}
     >
       {theme === "dark" ? (
