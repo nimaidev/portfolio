@@ -23,7 +23,7 @@ const DarkModeBtn = () => {
         setTheme(theme === "dark" || theme==='system' ? "light" : "dark");
       }}
     >
-      {theme === "dark" ? (
+      {theme === "dark" || theme==='system' ? (
         <SunIcon className="h-7 w-7 text-white" />
       ) : (
         <MoonIcon className="h-7 w-7 text-black" />
