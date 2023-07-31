@@ -1,12 +1,12 @@
 export default function TechStack() {
   return (
     <>
-      <div className="mb-2 mt-10 flex items-center justify-center gap-2 text-2xl font-bold sm:mb-14 font-handlee">
+      <div className="mb-2 mt-10 flex items-center justify-center gap-2 text-2xl font-bold sm:mb-14 font-handlee dark:text-white">
         <div className="mr-2 h-px flex-1 translate-y-px bg-gradient-to-l from-gray-200 to-white"></div>
         Technology where I stand out! 💪
         <div className="ml-2 h-px flex-1 translate-y-px bg-gradient-to-r from-gray-200 to-white"></div>
       </div>
-      <div className="font-handlee">
+      <div className="font-handlee dark:text-slate-300">
         <div className="col-span-1 mt-0 px-4 pb-8 text-center sm:mt-12 2xl:pb-8">
           <div className="grid gap-3 text-left md:grid-cols-2 lg:grid-cols-4">
             <article className="overview-card-wrapper   ">

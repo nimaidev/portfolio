@@ -6,28 +6,28 @@ import { formatDate } from "@/app/service/custom-service";
 import { useEffect, useState } from "react";
 
 export default function Table() {
-    const [repoData, setRepoData] = useState<GitHubRepository[]>([]);
-    const [blogData, setBlogData] = useState<BlogRepo[]>([]);
-    const [error, setError] = useState(false)
-    useEffect(() => {
-        const fetchData = () => {
-          try {
-             getRepoData(setRepoData);
-             getBlogData(setBlogData);
-          } catch (error) {
-            setError(true);
-          }
-        };
-      
-        fetchData();
-      }, []);
+  const [repoData, setRepoData] = useState<GitHubRepository[]>([]);
+  const [blogData, setBlogData] = useState<BlogRepo[]>([]);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    const fetchData = () => {
+      try {
+        getRepoData(setRepoData);
+        getBlogData(setBlogData);
+      } catch (error) {
+        setError(true);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="container mx-auto  pt-2 sm:mb-32 mt-5">
         <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-3 font-handlee">
-          <div className="absolute h-full w-2/3 bg-gradient-to-br from-indigo-200/30 to-red-100/40 blur-2xl max-lg:translate-x-1/3 lg:h-96 lg:w-full lg:translate-y-24 lg:-rotate-2 lg:rounded-[50%] lg:from-indigo-200/80 lg:via-red-100/60 lg:to-gray-50"></div>
+          <div className="absolute h-full w-2/3"></div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
-            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl">
+            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl dark:text-white">
               Active Github Repo 🏷️
             </h2>
             <div className="mb-3 flex flex-col gap-2.5 rounded-xl bg-white/40 p-3 backdrop-blur-lg sm:mb-7">
@@ -35,14 +35,12 @@ export default function Table() {
                 {repoData.map((repo) => (
                   <>
                     <a className="block p-2" href={repo.html_url}>
-                      <header
-                        className="flex items-center mb-0.5"
-                      >
-                        <h4 className="text-md truncate font-mono text-black dark:group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
+                      <header className="flex items-center mb-0.5">
+                        <h4 className="text-md truncate font-mono text-black :group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
                           0x4E43/{repo.name}
                         </h4>
                       </header>
-                      <div className="mr-1 flex items-center overflow-hidden whitespace-nowrap text-sm leading-tight text-gray-400">
+                      <div className="mr-1 flex items-center overflow-hidden whitespace-nowrap text-sm leading-tight text-gray-400 dark:text-slate-300">
                         <span className="truncate">
                           Last Commited on {formatDate(repo.pushed_at)}
                         </span>
@@ -54,13 +52,13 @@ export default function Table() {
             </div>
             <a
               href="https://github.com/0x4E43?tab=repositories"
-              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
+              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5 dark:text-slate-300"
             >
               Browse 25+ repos
             </a>
           </div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
-            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl">
+            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl dark:text-white">
               Lesser-Known Innovations 🧪
             </h2>
             <div className="mb-3 flex flex-col gap-2.5 rounded-xl bg-white/40 p-3 backdrop-blur-lg sm:mb-7">
@@ -90,31 +88,28 @@ export default function Table() {
                   </div>
                   <div className="absolute opacity-60 text-4xl">🏆</div>
                   <h4 className="z-40 max-w-full truncate text-center font-bold leading-tight text-blue-50 text-md">
-                           Coming Soon                               
+                    Coming Soon
                   </h4>
                 </a>
               </article>
-
             </div>
             <a
               href="/spaces"
-              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
+              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5 dark:text-slate-300"
             >
               Browse 10+ Projects{" "}
             </a>
           </div>
           <div className="relative col-span-1 flex flex-col items-stretch text-center">
-            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl">
-              Bite-Sized Tech Exploration 🧭
+            <h2 className="mb-5 flex items-center justify-center gap-2 text-lg font-semibold 2xl:mb-6 2xl:text-xl dark:text-white">
+              Byte-Sized Tech Exploration 🧭
             </h2>
             <div className="mb-3 flex flex-col gap-2.5 rounded-xl bg-white/40 p-3 backdrop-blur-lg sm:mb-7">
               <article className="overview-card-wrapper group white ">
                 {blogData.map((blog) => (
                   <>
                     <a className="block p-2" href={blog.url}>
-                      <header
-                        className="flex items-center mb-0.5"
-                      >
+                      <header className="flex items-center mb-0.5">
                         <h4 className="text-md truncate font-mono text-black dark:group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
                           {blog.title}
                         </h4>
@@ -130,8 +125,8 @@ export default function Table() {
               </article>
             </div>
             <a
-              href="/datasets"
-              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5"
+              href="https://dev.to/0x4e43"
+              className="self-center underline decoration-gray-300 underline-offset-8 transition-all hover:decoration-gray-800 hover:underline-offset-[6px] max-sm:mb-5 dark:text-slate-300"
             >
               See all Blogs
             </a>

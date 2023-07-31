@@ -1,14 +1,14 @@
 export default function Stats() {
   return (
     <>
-      <div className="flex hidden sm:flex stats shadow align-center align-middle mt-10 mb-5">
+      <div className="flex hidden sm:flex stats shadow align-center align-middle mt-10 mb-5 dark:bg-slate-600">
         <div className="stat">
           <div className="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="inline-block w-8 h-8 stroke-current"
+              className="inline-block w-8 h-8 stroke-current dark:stroke-app-purple"
             >
               <path
                 strokeLinecap="round"
@@ -18,9 +18,9 @@ export default function Stats() {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Total Commits</div>
-          <div className="stat-value text-primary">252</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-title dark:text-slate-300">Total Commits</div>
+          <div className="stat-value text-primary dark:text-app-purple">252</div>
+          <div className="stat-desc dark:text-slate-300">21% more than last month</div>
         </div>
 
         <div className="stat">
@@ -29,7 +29,7 @@ export default function Stats() {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="inline-block w-8 h-8 stroke-current"
+              className="inline-block w-8 h-8 stroke-current dark:stroke-app-sky"
             >
               <path
                 strokeLinecap="round"
@@ -39,22 +39,22 @@ export default function Stats() {
               ></path>
             </svg>
           </div>
-          <div className="stat-title">Lines of Code Written</div>
-          <div className="stat-value text-secondary">2.6K</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="stat-title dark:text-slate-300">Lines of Code Written</div>
+          <div className="stat-value text-secondary dark:text-app-sky">2.6K</div>
+          <div className="stat-desc dark:text-slate-300">21% more than last month</div>
         </div>
 
         <div className="stat">
           <div className="stat-figure text-secondary">
             <div className="avatar online">
-              <div className="w-16 rounded-full">
+              <div className="w-16 rounded-full dark:bg-slate-300">
                 <img src="https://pbs.twimg.com/profile_images/1684877526806745089/Yo1sunvf_400x400.jpg" />
               </div>
             </div>
           </div>
-          <div className="stat-value">86%</div>
-          <div className="stat-title">Tasks done</div>
-          <div className="stat-desc text-secondary">31 tasks remaining</div>
+          <div className="stat-value dark:text-app-dark-yellow">86%</div>
+          <div className="stat-title dark:text-slate-300">Tasks done</div>
+          <div className="stat-desc text-secondary dark:text-app-dark-yellow">31 tasks remaining</div>
         </div>
       </div>
     </>

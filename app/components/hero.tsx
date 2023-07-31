@@ -19,7 +19,7 @@ export default function Hero() {
             <h1 className="text-5xl font-bold text-app-purple">
               Hello Buddy ! 👋
             </h1>
-            <p className="py-6 md:text-2xl text-xl">
+            <p className="py-6 md:text-2xl text-xl dark:text-slate-300">
               I am <span className="font-bold text-app-purple">Nimai</span> here. Welcome to another dumb-a*s
               portfolio,where you will be seeing unecessary url redirects, not
               so needed tech blogs, useless & time-waste tweet, un-necessary code
