@@ -36,7 +36,7 @@ export default function Table() {
                   <>
                     <a className="block p-2" href={repo.html_url}>
                       <header className="flex items-center mb-0.5">
-                        <h4 className="text-md truncate font-mono text-black :group-hover:text-yellow-500 group-hover:text-indigo-600 text-smd">
+                        <h4 className="text-md truncate font-mono text-black dark:hover:text-yellow-500  text-smd">
                           0x4E43/{repo.name}
                         </h4>
                       </header>
