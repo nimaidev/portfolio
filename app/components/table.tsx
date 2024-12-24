@@ -37,7 +37,7 @@ export default function Table() {
                     <a className="block p-2" href={repo.html_url}>
                       <header className="flex items-center mb-0.5">
                         <h4 className="text-md truncate font-mono text-black dark:hover:text-yellow-500  text-smd">
-                          0x4E43/{repo.name}
+                          nimaidev/{repo.name}
                         </h4>
                       </header>
                       <div className="mr-1 flex items-center overflow-hidden whitespace-nowrap text-sm leading-tight text-gray-400 dark:text-slate-300">

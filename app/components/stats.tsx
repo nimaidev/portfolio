@@ -1,4 +1,23 @@
+import { useEffect, useState } from "react";
+import { GitHubUser } from "@/app/model/app-models";
+import { getProfile } from "../service/app-service";
+
 export default function Stats() {
+
+  const [profile, setProfile] = useState<GitHubUser>();
+  const[error, setError] = useState(false)
+  useEffect(() => {
+      const fetchData = () => {
+        try {
+          getProfile(setProfile);
+        } catch (error) {
+          setError(true);
+        }
+      };
+  
+      fetchData();
+    }, []);
+
   return (
     <>
       <div className="flex hidden sm:flex stats shadow align-center align-middle mt-10 mb-5 dark:bg-slate-600">
@@ -48,7 +67,7 @@ export default function Stats() {
           <div className="stat-figure text-secondary">
             <div className="avatar online">
               <div className="w-16 rounded-full dark:bg-slate-300">
-                <img src="https://pbs.twimg.com/profile_images/1684877526806745089/Yo1sunvf_400x400.jpg" />
+                <img src={profile?.avatar_url}/>
               </div>
             </div>
           </div>

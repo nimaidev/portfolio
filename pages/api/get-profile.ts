@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const GITHUB_API_URL = process.env.GITHUB_API_URL;
     const username = process.env.GITHUB_PROFILE;
-    const repoEndpoint = `${GITHUB_API_URL}/users/${username}/repos`;
+    const repoEndpoint = `${GITHUB_API_URL}/user`;
     const accessToken = process.env.APP_TOKEN;
     const headers = {
       Authorization: `token ${accessToken}`,
