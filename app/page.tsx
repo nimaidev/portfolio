@@ -1,31 +1,27 @@
-"use client"
+"use client";
 import "./globals.css";
 import Hero from "./components/hero";
 import TechStack from "./components/tech";
 import Footer from "./components/footer";
 import Table from "./components/table";
 import DarkModeBtn from "./darkModeBtn";
+import NavBar from "./components/navbar";
 
 export default function Home() {
   return (
     <main>
-      <div className="flex dark:bg-slate-800">
-        {/* Sidebar */}
-        <div className="w-1/6 h-screen top-0 left-0 mt-20">
-          {/* Sidebar content goes here */}
-          {/* <SideNav /> */}
-        </div>
-
+      <div className="flex items-center justify-center dark:bg-slate-800 min-h-screen">
         {/* Main Content */}
-        <div className="w-3/4 md:-ml-20 ">
-          
-        <DarkModeBtn/>
+        <div className="w-full max-w-6xl">
+          <div className="sticky top-0 z-50">
+            <NavBar />
+          </div>
           {/* Main content goes here */}
-          <Hero/>
-          <TechStack/>
+          <Hero />
+          <TechStack />
           {/* <Activities /> */}
-          <Table/>
-          <Footer/>
+          <Table />
+          <Footer />
         </div>
       </div>
     </main>
