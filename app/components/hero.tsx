@@ -1,7 +1,5 @@
 import profileImage from "../asset/avtar.png";
 import Image from "next/image";
-import Quotes from "./quote";
-import Stats from "./stats";
 export default function Hero() {
   return (
     <>
