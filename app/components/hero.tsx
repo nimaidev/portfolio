@@ -5,8 +5,8 @@ import Stats from "./stats";
 export default function Hero() {
   return (
     <>
-      <Quotes />
-      <Stats/>
+      {/* <Quotes /> */}
+      {/* <Stats/> */}
       <div className="hero md:-mt-20  font-handlee">
         <div className="hero-content flex-col lg:flex-row">
           <Image
