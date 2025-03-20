@@ -19,12 +19,13 @@ module.exports = {
         'caveat': ['Caveat', 'sans-serif']
       },
       colors: {
-        'bg-color': '#EFE8F7',
-        'app-purple': "#D4AEFF",
-        'app-yellow': "#FEDE65",
-        'app-purple': "#D4AEFF",
-        'primary-dark': "#FEDE65",
-        'app-sky': "#87CEEB",
+        'app-dark': '#2E3532',
+        'app-primary': "#8B2635",
+        'app-white': "#e0e2db",
+        'app-gray': "#D2D4C8",
+        'app-teal': "D3EFBD",
+        'primary-dark': "#2E3532",
+        'app-sky': "#2e3532",
         'app-dark-yellow': "#FFF8DC"
       },
     },
