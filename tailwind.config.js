@@ -16,7 +16,7 @@ module.exports = {
     {
       fontFamily: {
         'handlee': ['Handlee', 'sans-serif'],
-        'caveat': ['Caveat', 'sans-serif']
+        'firacode': ['Fira Code', 'monospace']
       },
       colors: {
         'app-dark': '#2E3532',
