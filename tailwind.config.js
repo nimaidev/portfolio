@@ -23,7 +23,7 @@ module.exports = {
         'app-primary': "#8B2635",
         'app-white': "#e0e2db",
         'app-gray': "#D2D4C8",
-        'app-teal': "D3EFBD",
+        'app-teal': "#d3efbd",
         'primary-dark': "#2E3532",
         'app-sky': "#2e3532",
         'app-dark-yellow': "#FFF8DC"
