@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import Hero from "./components/hero";
+import Profile from "./components/profile";
 import TechStack from "./components/tech";
 import Footer from "./components/footer";
 import Table from "./components/table";
@@ -17,7 +17,7 @@ export default function Home() {
             <NavBar />
           </div>
           {/* Main content goes here */}
-          <Hero />
+          <Profile />
           <TechStack />
           {/* <Activities /> */}
           <Table />

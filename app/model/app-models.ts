@@ -65,3 +65,8 @@ export interface GitHubUser {
     two_factor_authentication: boolean;
     plan: UserPlan;
 }
+
+export interface ProfileData{
+  name: string,
+  bio: string
+}
