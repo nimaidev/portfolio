@@ -28,16 +28,18 @@ export default function Profile() {
             width={200}
             height={200}
             alt="Picture of the author"
-            className="rounded-full"
+            className="rounded-full w-[200px] h-[200px]"
           />
-          <div>
+          <div className="mx-4">
             <p className="py-6 dark:text-slate-300 font-firacode">
-              I am a software engineer passionate about <span className="font-bold text-app-teal">system architecture, backend engineering, and tool building</span>. I enjoy designing scalable solutions, optimizing performance, and exploring new technologies. I am also the creator and maintainer of Joker DB, a key-value store designed with encryption for secure data storage.
+              I am a software engineer passionate about <span className="font-bold dark:text-app-teal text-app-primary">system architecture, backend engineering, and tool building</span>. I enjoy designing scalable solutions, optimizing performance, and exploring new technologies. I am also the creator and maintainer of Joker DB, a key-value store designed with encryption for secure data storage.
             </p>
-            <p className="py-6 dark:text-slate-300 font-firacode">
+            <p className="dark:text-slate-300 font-firacode">
             I started my journey in software development with a strong focus on Java and backend engineering, gradually expanding into microservices, cloud computing, and automation. Over the years, I have worked on building SaaS platforms, high-performance backend systems, and efficient cloud-based workflows.
             </p>
-            <button className="btn bg-app-purple">Subscribe Email 📩</button>
+            <div className="py-4">
+            <button className="btn dark:bg-app-teal bg-app-primary dark:text-app-primary text-app-white">Subscribe Email 📩</button>
+            </div>
           </div>
         </div>
       </div>
