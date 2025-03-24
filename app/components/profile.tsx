@@ -2,6 +2,7 @@ import profileImage from "../asset/profile.jpg";
 import Image from "next/image";
 import { ProfileData } from "../model/app-models";
 import { useEffect, useState } from "react";
+import Socials from "./socials";
 export default function Profile() {
   const [profile, setProfile] = useState<ProfileData | null>(null);
   //get the data from public/data/profile.json
@@ -48,11 +49,12 @@ export default function Profile() {
               have worked on building SaaS platforms, high-performance backend
               systems, and efficient cloud-based workflows.
             </p>
-            {/* <div className="py-4">
-              <button className="btn dark:bg-app-teal bg-app-primary dark:text-app-primary text-app-white">
+            <div className="py-4">
+              {/* <button className="btn dark:bg-app-teal bg-app-primary dark:text-app-primary text-app-white">
                 Subscribe Email 📩
-              </button>
-            </div> */}
+              </button> */}
+              <Socials/>
+            </div>
           </div>
         </div>
       </div>
