@@ -6,7 +6,7 @@ const NavBar = () => {
   const pathname = usePathname(); // Get the current route
 
   return (
-    <div className="navbar shadow-sm border-b border-app-teal flex items-center justify-between px-6 py-4">
+    <div className="navbar shadow-sm border-b border-app-teal flex items-center justify-between px-6 py-4 bg-white dark:bg-app-dark">
       {/* Left: Logo */}
       <div className="flex-1">
         <h1 className="text-app-primary dark:text-app-teal text-2xl font-firacode">
@@ -20,8 +20,8 @@ const NavBar = () => {
           {[
             { name: "Home", path: "/" },
             { name: "Projects", path: "/projects" },
-            { name: "Blogs", path: "/blog" },
-            { name: "Reading", path: "/about" },
+            { name: "Blogs", path: "/blogs" },
+            { name: "Readings", path: "/reading" },
           ].map((link) => (
             <li key={link.path}>
               <Link
