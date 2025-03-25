@@ -21,7 +21,7 @@ const NavBar = () => {
             { name: "Home", path: "/" },
             { name: "Projects", path: "/projects" },
             { name: "Blogs", path: "/blogs" },
-            { name: "Readings", path: "/reading" },
+            { name: "Readings", path: "/readings" },
           ].map((link) => (
             <li key={link.path}>
               <Link
