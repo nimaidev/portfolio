@@ -70,3 +70,8 @@ export interface ProfileData{
   name: string,
   bio: string
 }
+
+export interface TechData{
+  name : string,
+  icon : string
+}
