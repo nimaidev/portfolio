@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ProfileData } from "../model/app-models";
 import { useEffect, useState } from "react";
 import Socials from "./socials";
+import Link from "next/link";
 export default function Profile() {
   const [profile, setProfile] = useState<ProfileData | null>(null);
   //get the data from public/data/profile.json
@@ -32,28 +33,52 @@ export default function Profile() {
             className="rounded-full w-[200px] h-[200px]"
           />
           <div className="mx-4">
-            <p className="py-6 dark:text-slate-300 font-firacode">
+            <p className=" dark:text-slate-300 font-firacode">
               I am a software engineer passionate about{" "}
               <span className="font-bold dark:text-app-teal text-app-primary">
                 system architecture, backend engineering, and tool building
               </span>
               . I enjoy designing scalable solutions, optimizing performance,
               and exploring new technologies. I am also the creator and
-              maintainer of Joker DB, a key-value store designed with encryption
-              for secure data storage.
+              maintainer of{" "}
+              <Link className="text-app-primary dark:text-app-teal" href="">
+                Joker DB
+              </Link>
+              , a key-value store designed with encryption for secure data
+              storage.
             </p>
+            <p className="dark:text-slate-300 font-firacode py-3">
+              I started my journey in software development at{" "}
+              <Link className="text-app-primary dark:text-app-teal" href="">
+                Sears India
+              </Link>
+              , with a strong focus on Java and backend engineering, gradually
+              expanding into microservices, cloud computing, and automation.
+              Over the years, I have worked on building SaaS platforms,
+              high-performance backend systems, and efficient cloud-based
+              workflows.
+            </p>
+
             <p className="dark:text-slate-300 font-firacode">
-              I started my journey in software development with a strong focus
-              on Java and backend engineering, gradually expanding into
-              microservices, cloud computing, and automation. Over the years, I
-              have worked on building SaaS platforms, high-performance backend
-              systems, and efficient cloud-based workflows.
+              I am currently working at{" "}
+              <Link
+                className="text-app-primary dark:text-app-teal"
+                href="https://iqnext.io"
+              >
+                IQNext
+              </Link>
+              , where I focus on building a smart building management platform
+              that enables organizations to optimize operations through
+              data-driven insights and automation. I am also working on an
+              AI-driven approach to enhance energy efficiency, leveraging
+              intelligent analytics to reduce energy consumption and improve
+              sustainability in facility management.
             </p>
             <div className="py-4">
               {/* <button className="btn dark:bg-app-teal bg-app-primary dark:text-app-primary text-app-white">
                 Subscribe Email 📩
               </button> */}
-              <Socials/>
+              <Socials />
             </div>
           </div>
         </div>
