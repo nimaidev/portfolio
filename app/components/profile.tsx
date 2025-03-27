@@ -4,9 +4,14 @@ import { ProfileData } from "../model/app-models";
 import { useEffect, useState } from "react";
 import Socials from "./socials";
 import Link from "next/link";
+import Tippy from "@tippyjs/react"; // Import Tippy from the correct package
+import "tippy.js/dist/tippy.css"; // Import default styles
+
 export default function Profile() {
   const [profile, setProfile] = useState<ProfileData | null>(null);
-  //get the data from public/data/profile.json
+  const [repoInfo, setRepoInfo] = useState<any | null>(null); // State for GitHub repo info
+
+  // Fetch profile data
   useEffect(() => {
     fetch("/data/profile.json")
       .then((res) => res.json())
@@ -15,10 +20,20 @@ export default function Profile() {
           name: data.name,
           bio: data.bio,
         });
-        console.log(data);
       })
       .catch((error) => console.error("Error fetching profile:", error));
   }, []);
+
+  // Fetch GitHub repo data
+  useEffect(() => {
+    fetch("https://api.github.com/repos/nimaidev/joker")
+      .then((res) => res.json())
+      .then((data) => {
+        setRepoInfo(data);
+      })
+      .catch((error) => console.error("Error fetching repo info:", error));
+  }, []);
+
   return (
     <>
       {/* <Quotes /> */}
