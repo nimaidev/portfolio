@@ -4,7 +4,11 @@
     "icon": "/java.png"
   },
   {
+    "name": "Python",
+    "icon": "/java.png"
+  },
+  {
     "name" : "AI & ML",
-    "icon": "/ai.png"
+    "icon": "/java.png"
   }
 ]

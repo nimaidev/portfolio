@@ -18,10 +18,10 @@ export default function Home() {
           </div>
           {/* Main content goes here */}
           <Profile />
-          <TechStack />
+          {/* <TechStack /> */}
           {/* <Activities /> */}
-          <Table />
-          <Footer />
+          {/* <Table /> */}
+          {/* <Footer /> */}
         </div>
       </div>
     </main>
