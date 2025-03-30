@@ -6,7 +6,7 @@ const Socials = () => {
   return (
     <div className="flex space-x-4 dark:text-app-white">
       <div className="flex items-center space-x-2 dark:text-app-white">
-        <a href="https://github.com" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
+        <a href="https://github.com/nimaidev" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
           <span className="mx-1">
             <PiGithubLogoFill className="text-black dark:text-app-white" />
           </span>
