@@ -14,7 +14,7 @@ const Socials = () => {
         </a>
       </div>
       <div className="flex items-center space-x-2">
-        <a href="https://x.com/nimaidev_" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
+        <a href="https://www.linkedin.com/in/nimai-charan" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
           <span className="mx-1">
             <PiLinkedinLogoFill className="text-[#0077B5]" />
           </span>
@@ -22,7 +22,7 @@ const Socials = () => {
         </a>
       </div>
       <div className="flex items-center space-x-2">
-        <a href="https://github.com" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
+        <a href="https://x.com/nimaidev_" className="flex items-center space-x-1 border border-black dark:border-app-white px-2 py-1 rounded-lg">
           <span className="mx-1">
             <RiTwitterXLine className="text-black dark:text-app-white" />
           </span>
