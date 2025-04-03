@@ -21,7 +21,7 @@ export default function Home() {
           {/* <TechStack /> */}
           {/* <Activities /> */}
           {/* <Table /> */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </div>
     </main>
