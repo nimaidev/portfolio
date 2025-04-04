@@ -1,11 +1,9 @@
 "use client";
 import "./globals.css";
 import Profile from "./components/profile";
-import TechStack from "./components/tech";
 import Footer from "./components/footer";
-import Table from "./components/table";
-import DarkModeBtn from "./darkModeBtn";
 import NavBar from "./components/navbar";
+import RecentBlogs from "./components/recentBlogs";
 
 export default function Home() {
   return (
@@ -20,7 +18,7 @@ export default function Home() {
           <Profile />
           {/* <TechStack /> */}
           {/* <Activities /> */}
-          {/* <Table /> */}
+          <RecentBlogs />
           <Footer />
         </div>
       </div>
