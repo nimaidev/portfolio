@@ -4,6 +4,7 @@ import Profile from "./components/profile";
 import Footer from "./components/footer";
 import NavBar from "./components/navbar";
 import RecentBlogs from "./components/recentBlogs";
+import ActiveProject from "./components/activeProject";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           {/* <TechStack /> */}
           {/* <Activities /> */}
           <RecentBlogs />
+          <ActiveProject/>
           <Footer />
         </div>
       </div>
