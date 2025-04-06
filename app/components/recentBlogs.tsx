@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { BlogRepo } from "../model/app-models";
+import Link from "next/link";
 export default function RecentBlogs() {
 
   const [blogData, setBlogData] = useState<BlogRepo[]>([]);
@@ -27,9 +28,10 @@ export default function RecentBlogs() {
   // sort the blogData
 
   return <>
-    <div>
+    <div className="w-[50%]">
       <div>
-        <p className="text-2xl text-black dark:text-app-white font-firacode">Recent Blogs:</p>
+        <p className="text-2xl text-black dark:text-app-white font-firacode">Recent Blogs  <Link className="text-sm text-app-primary dark:text-app-teal" href="/blogs">Full Archive-{">"}</Link></p>
+        <p className="text-sm text-gray-500">Things I have written recently.</p>
       </div>
       <div className="mt-3 font-firacode">
       {blogData.map(blog => {return(

@@ -19,8 +19,11 @@ export default function Home() {
           <Profile />
           {/* <TechStack /> */}
           {/* <Activities /> */}
-          <RecentBlogs />
-          <ActiveProject/>
+          <div className="flex flex-col md:flex-row items-stretch md:items-start">
+            <ActiveProject />
+            <div className="md:divider md:divider-horizontal"></div>
+            <RecentBlogs />
+          </div>
           <Footer />
         </div>
       </div>
