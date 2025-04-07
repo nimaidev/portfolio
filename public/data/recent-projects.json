@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Project A",
+        "description": "Description of Project A",
+        "date": "2023-01-01 - 2023-01-31",
+        "gitHubURL": "",
+        "liveURL": "",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "project-a.jpg",
+        "alt": "Project A Image"
+    },
+    {
+        "name": "Project B",
+        "description": "Description of Project B",
+        "date": "2023-01-01 - 2023-01-31",
+        "gitHubURL": "",
+        "liveURL": "",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "project-a.jpg",
+        "alt": "Project A Image"
+    },
+    {
+        "name": "Project C",
+        "description": "Description of Project C",
+        "date": "2023-01-01 - 2023-01-31",
+        "gitHubURL": "",
+        "liveURL": "",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "project-a.jpg",
+        "alt": "Project A Image"
+    },
+    {
+        "name": "Project D",
+        "description": "Description of Project D",
+        "date": "2023-01-01 - 2023-01-31",
+        "gitHubURL": "",
+        "liveURL": "",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "project-a.jpg",
+        "alt": "Project A Image"
+    }
+]

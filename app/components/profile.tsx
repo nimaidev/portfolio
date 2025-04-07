@@ -169,7 +169,7 @@ export default function Profile() {
         </div>
       </div>
       <div>
-        <p>Hello</p>
+        {/* <p>Hello</p> */}
       </div>
     </div>
   );

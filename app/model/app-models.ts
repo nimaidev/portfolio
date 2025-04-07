@@ -75,3 +75,11 @@ export interface TechData{
   name : string,
   icon : string
 }
+
+export interface ProjectData{
+  name : string,
+  description : string,
+  date: string
+  url : string,
+  image : string
+}
