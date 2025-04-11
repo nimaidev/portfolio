@@ -1,11 +1,11 @@
 [
     {
-        "name": "Project A",
-        "description": "Description of Project A",
-        "date": "2023-01-01 - 2023-01-31",
-        "gitHubURL": "",
+        "name": "Joker DB",
+        "description": "JokerDB🃏 is a Redis clone implemented in Golang. This project aims to provide a simplified version of Redis functionalities using the Go programming language.",
+        "date": "2023-01-01 - Present",
+        "gitHubURL": "https://github.com/nimaidev/joker",
         "liveURL": "",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "tags": ["Golang", "KV Database", "JavaScript"],
         "image": "project-a.jpg",
         "alt": "Project A Image"
     },

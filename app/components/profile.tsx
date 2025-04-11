@@ -36,7 +36,7 @@ export default function Profile() {
 
   return (
     <div>
-      <div className="hero mt-10 font-handlee">
+      <div className="hero mt-20 font-handlee">
         <div className="hero-content flex-col lg:flex-row">
           <Image
             src={profileImage}
