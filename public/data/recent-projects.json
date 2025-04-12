@@ -1,8 +1,8 @@
 [
     {
         "name": "Joker DB",
-        "description": "JokerDB🃏 is a Redis clone implemented in Golang. This project aims to provide a simplified version of Redis functionalities using the Go programming language.",
-        "date": "2023-01-01 - Present",
+        "description": "JokerDB is a Redis clone implemented in Golang. This project aims to provide a simplified version of Redis functionalities using the Go programming language.",
+        "date": "Dec 6, 2023 - Present",
         "gitHubURL": "https://github.com/nimaidev/joker",
         "liveURL": "",
         "tags": ["Golang", "KV Database", "JavaScript"],

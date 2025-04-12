@@ -36,9 +36,17 @@ export default function ActiveProject() {
       <div className="mt-3 font-firacode">
       {projectData.map(project => {return(
         <div className="m-2" key={project.name}>
-          <li className="text-md font-bold">{project.date}</li>
+          <li className="text-md font-bold">
             <a className="text-[17px] text-app-primary dark:text-app-teal italic underline" href={project.url}>{project.name}</a>
+            </li>
             <p><i>{project.description}</i></p>
+            <div className="flex">
+              {project.tags && project.tags.map((tag, index) => {
+                return <div key={index} className="border border-app-primary text-sm font-thin m-1 p-1 rounded-xl">
+                  {tag}
+                </div>
+              })}
+            </div>
         </div>
       )})}
       </div>

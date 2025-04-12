@@ -82,4 +82,5 @@ export interface ProjectData{
   date: string
   url : string,
   image : string
+  tags: string[]
 }
