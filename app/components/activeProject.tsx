@@ -26,7 +26,7 @@ export default function ActiveProject() {
           Active Projects{" "}
           <Link
             className="text-sm text-app-primary dark:text-app-teal"
-            href="/blogs"
+            href="/projects"
           >
             All Projects-{">"}
           </Link>
@@ -42,7 +42,7 @@ export default function ActiveProject() {
             <p><i>{project.description}</i></p>
             <div className="flex">
               {project.tags && project.tags.map((tag, index) => {
-                return <div key={index} className="border border-app-primary text-sm font-thin m-1 p-1 rounded-xl">
+                return <div key={index} className="border border-app-primary text-[12px] font-thin m-1 p-1 rounded-xl">
                   {tag}
                 </div>
               })}

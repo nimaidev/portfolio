@@ -24,17 +24,7 @@
         "description": "Encrypted Notes is a secure vault for all your notes, built with Next.js and TypeScript. This project ensures your notes are safely stored and easily accessible.",
         "date": "2023-01-01 - 2023-01-31",
         "gitHubURL": "https://github.com/nimaidev/encrypted-notes",
-        "liveURL": "https://github.com/nimaidev/encrypted-notes",
-        "tags": ["HTML", "CSS", "JavaScript"],
-        "image": "project-a.jpg",
-        "alt": "Project A Image"
-    },
-    {
-        "name": "Project D",
-        "description": "Description of Project D",
-        "date": "2023-01-01 - 2023-01-31",
-        "gitHubURL": "",
-        "liveURL": "",
+        "url": "https://github.com/nimaidev/encrypted-notes",
         "tags": ["HTML", "CSS", "JavaScript"],
         "image": "project-a.jpg",
         "alt": "Project A Image"
