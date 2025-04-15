@@ -31,7 +31,7 @@ export default function ActiveProject() {
             All Projects-{">"}
           </Link>
         </p>
-        <p className="text-sm text-gray-500">My part-time experiments.</p>
+        <p className="text-sm text-gray-500 dark:text-gray-300">My part-time experiments.</p>
       </div>
       <div className="mt-3 font-firacode">
       {projectData.map(project => {return(
@@ -39,8 +39,8 @@ export default function ActiveProject() {
           <li className="text-md font-bold">
             <a className="text-[17px] text-app-primary dark:text-app-teal italic underline" href={project.url}>{project.name}</a>
             </li>
-            <p><i>{project.description}</i></p>
-            <div className="flex">
+            <p className="dark:text-app-white"><i>{project.description}</i></p>
+            <div className="flex dark:text-gray-300">
               {project.tags && project.tags.map((tag, index) => {
                 return <div key={index} className="border border-app-primary text-[12px] font-thin m-1 p-1 rounded-xl">
                   {tag}
