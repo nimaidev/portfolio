@@ -31,12 +31,12 @@ export default function RecentBlogs() {
     <div className="w-[50%]">
       <div>
         <p className="text-2xl text-black dark:text-app-white font-firacode">Recent Blogs  <Link className="text-sm text-app-primary dark:text-app-teal" href="/blogs">Full Archive-{">"}</Link></p>
-        <p className="text-sm text-gray-500">Things I have written recently.</p>
+        <p className="text-sm text-gray-500 dark:text-gray-300">Things I have written recently.</p>
       </div>
       <div className="mt-3 font-firacode">
       {blogData.map(blog => {return(
         <div className="m-2" key={blog.url}>
-          <li className="text-md font-bold">{new Date(blog.published_timestamp).toISOString().split("T")[0]}</li>
+          <li className="text-md font-bold dark:text-app-white">{new Date(blog.published_timestamp).toISOString().split("T")[0]}</li>
             <a className="text-[17px] text-app-primary dark:text-app-teal italic underline" href={blog.url}>{blog.title}</a>
         </div>
       )})}

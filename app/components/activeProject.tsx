@@ -42,7 +42,7 @@ export default function ActiveProject() {
             <p className="dark:text-app-white"><i>{project.description}</i></p>
             <div className="flex dark:text-gray-300">
               {project.tags && project.tags.map((tag, index) => {
-                return <div key={index} className="border border-app-primary text-[12px] font-thin m-1 p-1 rounded-xl">
+                return <div key={index} className="border border-app-primary dark:border-app-teal text-[12px] font-thin m-1 p-1 rounded-xl">
                   {tag}
                 </div>
               })}
